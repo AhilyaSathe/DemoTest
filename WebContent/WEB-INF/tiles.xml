@@ -26,6 +26,12 @@
     </definition>
      <definition name="products" extends="defaultTemplate">
     	<put-attribute name="body" value="/products.jsp"></put-attribute>
+    	 <put-attribute name="footer" value="" />
+    		<!-- <put-attribute name="menu"  value=""></put-attribute> -->
+    </definition>
+     <definition name="ShoppingCart" extends="defaultTemplate">
+    	<put-attribute name="body" value="/ShoppingCart.jsp"></put-attribute>
+    	<put-attribute name="footer" value="" />
     		<!-- <put-attribute name="menu"  value=""></put-attribute> -->
     </definition>
     

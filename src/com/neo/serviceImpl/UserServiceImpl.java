@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import com.neo.dao.EmploeeDao;
 import com.neo.model.User;
-import com.neo.model.SystemUser;
 import com.neo.service.UserService;
 
 @Service("userService")

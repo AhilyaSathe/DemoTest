@@ -16,7 +16,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-import com.neo.model.SystemUser;
+import com.neo.model.User;
 import com.neo.serviceImpl.CustomUserDetailsServiceImpl;
 /*import com.neo.serviceImpl.CustomUserDetailsService;*/
 /*import com.neo.serviceImpl.UserServiceImpl;*/
@@ -37,7 +37,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider
 		String password=(String)authentication.getCredentials();
 		System.out.println("in custom auth manager"+username+password);
 		UserDetails user = null;
-		SystemUser currentUser = null;
+		User currentUser = null;
 		String credentials=username;
 
 		user =  userDetailsService.loadUserByUsername(username);
